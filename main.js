@@ -7,8 +7,10 @@ const objArray = [];
 const arrayContainer = [];
 
 const addButton = document.querySelector('.addShedule_button')
-addButton.addEventListener('click', function() {
-    const objObject = {
+addButton.addEventListener('click', addFn)
+ 
+function addFn() {
+   const objObject = {
 
     };
 
@@ -39,7 +41,7 @@ addButton.addEventListener('click', function() {
     let bodyContainer = document.getElementById('container-2__blocks');
     let bodyAppendContainer = document.getElementById('container-2__blocks__appendChild')
     bodyContainer.insertBefore(box, bodyAppendContainer);
-})
+}
 
 const showButton = document.querySelector('.showShedule_button')
 showButton.addEventListener('click', function() {
@@ -56,5 +58,5 @@ showButton.addEventListener('click', function() {
 })
 
 function offClick() {
-    addButton.removeEventListener("click", offClick);
+    addButton.removeEventListener("click", addFn, false);
 };
