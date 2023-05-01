@@ -49,4 +49,5 @@ showButton.addEventListener('click', function() {
     mainContainer.style.display = "flex";
     let infoContainer = document.getElementById('container-2__blocks__appendChild');
     infoContainer.style.display = "flex";
+    addButton.disabled = true;
 })
