@@ -58,5 +58,5 @@ showButton.addEventListener('click', function() {
 })
 
 function offClick() {
-    addButton.removeEventListener("click", addFn, false);
+    addButton.removeEventListener("click", addFn);
 };
