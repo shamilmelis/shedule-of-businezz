@@ -39,7 +39,7 @@ addButton.addEventListener('click', function() {
     let bodyContainer = document.getElementById('container-2__blocks');
     let bodyAppendContainer = document.getElementById('container-2__blocks__appendChild')
     bodyContainer.insertBefore(box, bodyAppendContainer);
-}
+})
  
 
 const showButton = document.querySelector('.showShedule_button')
